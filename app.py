@@ -77,7 +77,7 @@ def predict():
             
         new_pred_dic[n] = new_pred
     
-    zip_list = zip(zip_list = zip(['GCMC with attention with user and item features', 'GCMC with attention with user features', 'GCMC with user and item features', 'GCMC with user features'], new_pred_dic.values())
+    zip_list = zip(['GCMC with attention with user and item features', 'GCMC with attention with user features', 'GCMC with user and item features', 'GCMC with user features'], new_pred_dic.values())
               
     return render_template('result.html',prediction = list(zip_list))
 
